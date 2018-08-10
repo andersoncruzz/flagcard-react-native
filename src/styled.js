@@ -7,7 +7,7 @@ export const HomeContainer = styled.View`
 
 export const SwiperContainer = styled.View`
   flex: 1;
-  margin-left: 20; 
+  margin-left: 20;
   margin-right: 20;
   align-items: center;
   justify-content: center;
