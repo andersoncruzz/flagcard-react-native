@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Image } from 'react-native'
-import { ScrollNavigator, NavigatorContent, NavigatorBox, Title } from './styled'
+import { ScrollNavigator, NavigatorContent, NavigatorBox, Title, Icon } from './styled'
 import { indicator, deposit, transfer, ajust, card, payment, block } from '../../assets/home'
 
 class BottomNavigator extends Component {
@@ -18,7 +17,7 @@ class BottomNavigator extends Component {
 
   renderMenusItems = ({ name, source }, index) => (
     <NavigatorBox key={`${name}-${index}`}>
-      <Image style={{ height: 40, width: 40 }} source={source} />
+      <Icon height={40} width={40} source={source} />
       <Title>{name}</Title>
     </NavigatorBox>
   )
