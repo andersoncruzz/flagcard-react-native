@@ -28,3 +28,8 @@ export const NavigatorBox = styled.View`
 export const Title = styled.Text`
   color: #FFF;
 `
+
+export const Icon = styled.Image`
+  height: ${({ height }) => height};
+  width: ${({ width }) => width};
+`
