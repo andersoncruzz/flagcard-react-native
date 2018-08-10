@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Image } from 'react-native'
 import { ScrollNavigator, NavigatorContent, NavigatorBox, Title } from './styled'
-import { indicator, deposit, transfer, ajust, card, payment } from '../../assets/home'
+import { indicator, deposit, transfer, ajust, card, payment, block } from '../../assets/home'
 
 class BottomNavigator extends Component {
   state = {
@@ -12,6 +12,7 @@ class BottomNavigator extends Component {
       { name: 'Ajustar Limite', source: ajust },
       { name: 'Cartão virtual', source: card },
       { name: 'Pagar', source: payment },
+      { name: 'Bloquear cartão', source: block },
     ],
   }
 

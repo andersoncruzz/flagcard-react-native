@@ -4,6 +4,7 @@ import transfer from './transfer.png'
 import ajust from './ajust.png'
 import card from './card.png'
 import payment from './payment.png'
+import block from './block.png'
 
 export {
   indicator,
@@ -12,4 +13,5 @@ export {
   ajust,
   card,
   payment,
+  block,
 }
