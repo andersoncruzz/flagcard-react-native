@@ -7,7 +7,7 @@ export const ScrollNavigator = styled.ScrollView.attrs({
   }),
 })`
   height: 150;
-  background-color: rgb(109, 33, 119);
+  background-color: rgb(0,175,203));
   width: 100%;
 `
 

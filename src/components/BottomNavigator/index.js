@@ -6,12 +6,12 @@ class BottomNavigator extends Component {
   state = {
     menuItems: [
       { name: 'Indicar amigos', source: indicator },
-      { name: 'Depositar', source: deposit },
-      { name: 'Transferir', source: transfer },
       { name: 'Ajustar Limite', source: ajust },
-      { name: 'Cartão virtual', source: card },
-      { name: 'Pagar', source: payment },
+      //{ name: 'Depositar', source: deposit },
       { name: 'Bloquear cartão', source: block },
+      //{ name: 'Transferir', source: transfer },
+      { name: 'Cartão virtual', source: card },
+      //{ name: 'Pagar', source: payment },
     ],
   }
 

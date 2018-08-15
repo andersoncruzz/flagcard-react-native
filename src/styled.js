@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HomeContainer = styled.View`
   flex: 1;
-  background-color: rgb(109, 33, 119);
+  background-color: rgb(2, 77, 165);
 `
 
 export const SwiperContainer = styled.View`
