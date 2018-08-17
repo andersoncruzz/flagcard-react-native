@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BottomNavigator } from './components'
+import { BottomNavigator, PanelFeedbackSaldo } from './components'
 import { HomeContainer, SwiperContainer } from './styled'
 import {Text} from 'react-native';
 
@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <HomeContainer>
         <SwiperContainer />
+        <PanelFeedbackSaldo />
         <BottomNavigator />
       </HomeContainer>
     )

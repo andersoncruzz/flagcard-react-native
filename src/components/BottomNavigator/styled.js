@@ -7,7 +7,7 @@ export const ScrollNavigator = styled.ScrollView.attrs({
   }),
 })`
   height: 150;
-  background-color: rgb(0,175,203));
+  background-color: rgb(2, 77, 165));
   width: 100%;
 `
 
@@ -16,7 +16,8 @@ export const NavigatorContent = styled.View`
 `
 
 export const NavigatorBox = styled.View`
-  background-color: rgba(255, 255, 255, 0.1);
+  ${'' /* background-color: rgba(255, 255, 255, 0.1); */}
+  background-color: rgb(0,175,203);
   height: 120;
   width: 100;
   margin-right: 10;
