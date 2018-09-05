@@ -1,6 +1,10 @@
 import BottomNavigator from './BottomNavigator'
-import PanelFeedbackSaldo from './PanelFeedbackSaldo'
+import SlideWindow from './SlideWindow'
+import UserSettings from './UserSettings'
+
 export {
   BottomNavigator,
-  PanelFeedbackSaldo,
+  UserSettings,
+  SlideWindow,
+
 }
