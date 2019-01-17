@@ -12,7 +12,7 @@ export const ScrollNavigator = styled.ScrollView.attrs({
 `
 
 export const NavigatorContent = styled.View`
-  padding: 20px;
+  padding: 8px;
 `
 
 export const NavigatorBox = styled.View`

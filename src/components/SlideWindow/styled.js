@@ -6,7 +6,7 @@ import {
 export const Icon = styled.Image`
   height: ${({ height }) => height};
   width: ${({ width }) => width};
-  margin-right:300;
+  margin-right: 75%;
 `
 export const Box = styled.View`
   background-color: rgb(230,230,230);
@@ -24,18 +24,27 @@ export const Box = styled.View`
 export const Title = styled.Text`
   color: #FFF;
 `
-export const Msg = styled.Text`
+export const MsgTop = styled.Text`
   color: #808080
   fontSize: 16
+  fontFamily: "HelveticaNeue-Condensed"
+`
+
+export const MsgBottom = styled.Text`
+  color: #808080
+  fontSize: 16
+  fontFamily: "HelveticaNeue-Thin"
 `
 export const Cifra = styled.Text`
   color: #00afcb
   fontSize: 30
+  fontFamily: "HelveticaNeue-Light"
 `
 
 export const Saldo = styled.Text`
   color: #00afcb
-  fontSize: 45
+  fontSize: 50
+  fontFamily: "HelveticaNeue-Light"
 `
 const backgroundColor = "#E6E6E6"
 

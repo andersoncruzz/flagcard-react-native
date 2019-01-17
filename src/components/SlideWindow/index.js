@@ -6,49 +6,49 @@ import {
 } from 'react-native'
 import Swiper from 'react-native-swiper'
 import { card} from '../../assets/panelFeedback'
-import {Icon, Box, Msg, Saldo, Cifra, ScrollNavigator, NavigatorContent, Slide } from './styled'
+import {Icon, Box, MsgBottom, MsgTop, Saldo, Cifra, ScrollNavigator, NavigatorContent, Slide } from './styled'
 
 class SlideWindow extends Component{
 
   state = {
     boxItems: [
       {
-        msg1: 'Você não fez nenhuma compra entendeu bem',
+        msgTop: 'Você não fez nenhuma compra entendeu bem',
         unidade: 'R$',
         saldo: '886,34',
-        msg2: 'Aguardando compra',
+        msgBottom: 'Aguardando compra',
         source: card
       },
       {
-        msg1: 'Compras',
+        msgTop: 'Compras',
         unidade: 'L',
         saldo: '1.006,34',
-        msg2: 'Devendo nao sei quantos reais',
+        msgBottom: 'Devendo nao sei quantos reais',
         source: card
       },
       {
-        msg1: 'Saldos',
+        msgTop: 'Saldos',
         unidade: 'R$',
         saldo: '231.006,34',
-        msg2: 'Testes',
+        msgBotom: 'Testes',
         source: card
       },
       {
-        msg1: 'Compras',
+        msgTop: 'Compras',
         unidade: 'L',
         saldo: '1.006,34',
-        msg2: 'Devendo nao sei quantos reais',
+        msgBottom: 'Devendo nao sei quantos reais',
         source: card
       },
     ]
   }
 
-  renderBoxItems = ({msg1, unidade, saldo, msg2, source}, index) => (
+  renderBoxItems = ({msgBottom, unidade, saldo, msgTop, source}, index) => (
     <View key={`${index}`} style={Slide.style}>
       <Icon height={65} width={65} source={source}/>
-      <Msg> {msg1} </Msg>
+      <MsgTop> {msgTop} </MsgTop>
       <Cifra>{unidade}{' '}<Saldo>{saldo}</Saldo></Cifra>
-      <Msg>{msg2}</Msg>
+      <MsgBottom>{msgBottom}</MsgBottom>
     </View>
   )
 
@@ -58,9 +58,9 @@ class SlideWindow extends Component{
         <Swiper style={Slide.wrapper}
           // dot={<View style={{backgroundColor: 'rgba(0,0,0,.2)', width: 5, height: 5, borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3}} />}
           // activeDot={<View style={{backgroundColor: '#000', width: 8, height: 8, borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3}} />}
-          paginationStyle={{
-             bottom: 0, left: 180, right: null
-           }}
+           paginationStyle={{
+              bottom: 0
+            }}
            showsButtons>
         {boxItems.map(this.renderBoxItems)}
       </Swiper>

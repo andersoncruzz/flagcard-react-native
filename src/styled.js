@@ -1,4 +1,7 @@
 import styled from 'styled-components'
+import {StyleSheet} from 'react-native';
+import Dimensions from 'Dimensions';
+
 
 export const HomeContainer = styled.View`
   flex: 1;
@@ -19,3 +22,19 @@ export const SwiperItemMock = styled.View`
   background-color: white;
   borderRadius: 5;
 `
+
+const height = Dimensions.get('window').height;
+const width = Dimensions.get('window').width;
+
+export const Rect = StyleSheet.create({
+  rectangle: {
+    marginTop: 20,
+    marginLeft: 20,
+    width: width-30,
+    height: height-60,
+    borderRadius: 10,
+    borderWidth: 3.0,
+    borderColor: '#ff9400',
+
+  }
+});
